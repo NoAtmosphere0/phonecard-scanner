@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "871191177097",
+    "project_id": "nap-tien-dt",
+    "storage_bucket": "nap-tien-dt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871191177097:android:94d89168b1e7117482a358",
+        "android_client_info": {
+          "package_name": "com.example.naptiendt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871191177097-g74dcsu4b14vfli6mfht306in38dlrft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8MktDLS3s2qHGBBeCgzD91Pmj3cOEVqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871191177097-g74dcsu4b14vfli6mfht306in38dlrft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
