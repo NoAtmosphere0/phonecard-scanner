@@ -12,11 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        
+
+        <!--Input image button-->
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/inputImageButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/inputImageButton"
             android:text="Chụp ảnh"
             app:cornerRadius="5dp"
             android:layout_weight="1"
@@ -24,16 +25,53 @@
             app:icon="@drawable/baseline_camera_alt_24"
             />
 
+        <!--Input gallery button-->
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/recognizeTextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/inputGalleryButton"
             android:text="Nhận diện ảnh"
             app:cornerRadius="5dp"
             android:layout_weight="1"
             android:layout_marginStart="5dp"
             app:icon="@drawable/baseline_document_scanner_24"/>
+    </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--ImageView-->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_image_24"
+                android:adjustViewBounds="true"
+                app:strokeWidth="2dp"/>
+
+            <!--Recognized text-->
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Mã nhận diện được: "/>
+
+            <!--Show the recognized text-->
+            <EditText
+                android:id="@+id/recognizedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </LinearLayout>
