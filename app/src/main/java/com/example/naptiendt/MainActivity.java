@@ -1,8 +1,12 @@
 package com.example.naptiendt;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.google.android.gms.vision.text.TextRecognizer;
+
+import androidx.camera.core.ImageAnalysis;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,4 +15,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-}
+};
+
+// text recognition app
